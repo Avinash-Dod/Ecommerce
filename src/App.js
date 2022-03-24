@@ -1,9 +1,7 @@
-
-import Footer from './components/Footer';
-import Contact from './Pages/Contact';
 import { Route, Routes } from 'react-router';
+import Contact from './Pages/Contact';
 import Home from './components/Home';
-import About from './components/About';
+import About from './Pages/About';
 import './App.css';
 
 
@@ -21,7 +19,7 @@ function App() {
       <Route path="login" element={<Contact />} />
       </Routes>
       
-      <Footer />
+      
     </div>
   );
 }

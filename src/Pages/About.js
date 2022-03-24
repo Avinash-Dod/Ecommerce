@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 function About() {
     return (
         <>
@@ -187,6 +188,7 @@ function About() {
         </div>
       </div>
     </div>
+    <Footer/>
         </>
     )
 
