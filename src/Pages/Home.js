@@ -1,4 +1,5 @@
-import Header from "./Header";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 function Home()
 {
     return (
@@ -180,7 +181,7 @@ function Home()
             <div className="col-md-6">
               <div className="left-content">
                 <h4>Looking for the best products?</h4>
-                <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a rel="nofollow" href="https://templatemo.com/contact">Contact us</a> for more info.</p>
+                <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a rel="nofollow" href="/contact">Contact us</a> for more info.</p>
                 <ul className="featured-list">
                   <li><a href=" #">Lorem ipsum dolor sit amet</a></li>
                   <li><a href=" #">Consectetur an adipisicing elit</a></li>
@@ -188,7 +189,7 @@ function Home()
                   <li><a href=" #">Corporis, omnis doloremque</a></li>
                   <li><a href=" #">Non cum id reprehenderit</a></li>
                 </ul>
-                <a href="about.html" className="filled-button">Read More</a>
+                <a href="/about" className="filled-button">Read More</a>
               </div>
             </div>
             <div className="col-md-6">
@@ -199,6 +200,7 @@ function Home()
           </div>
         </div>
       </div>
+      <Footer />
       </>
     )
 
