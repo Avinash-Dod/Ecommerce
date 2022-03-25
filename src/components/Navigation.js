@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router";
 import About from "../Pages/About";
+import Cart from "../Pages/Cart";
 import Contact from "../Pages/Contact";
 import Home from "../Pages/Home";
 import Login from "../Pages/Login";
@@ -16,7 +17,7 @@ function Nav()
       <Route path="about" element={<About />} />
       <Route path="login" element={<Login />} />
       <Route path="signup" element={<SignUp/>} />
-      
+      <Route path="cart" element={<Cart/>} />
       </Routes>
       
 </div>

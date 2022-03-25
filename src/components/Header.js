@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 const stylecss={
-  "color": "#f33f3f",
+  "color": "#ffff",
   "font-weight": "bold",
 
   
@@ -32,6 +32,9 @@ function Header() {
               </li>
               <li className="nav-item">
               <Link style={stylecss} to="/login">Login</Link>
+              </li>
+              <li className="nav-item">
+              <Link style={stylecss} to="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</Link>
               </li>
              
             </ul>

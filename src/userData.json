@@ -1,0 +1,77 @@
+
+
+{
+  "productData": [
+    {
+      "productId": 1,
+      "id": 1,
+      "title":"Tittle goes here",
+      "price":2500,
+      "description": "delectus aut autem",
+      
+      "image":"https://paynami2022.s3.us-east-2.amazonaws.com/qrcode_image/621f27807a02ba41d52d0a54.png"
+    },
+    {
+      "productId": 1,
+      "id": 2,
+      "description": "quis ut nam facilis et officia qui",
+      "completed": false,
+      "image":"https://paynami2022.s3.us-east-2.amazonaws.com/qrcode_image/621f27807a02ba41d52d0a54.png"
+    },
+    {
+      "productId": 1,
+      "id": 3,
+      "description": "fugiat veniam minus",
+      "completed": false,
+      "image":"https://paynami2022.s3.us-east-2.amazonaws.com/qrcode_image/621f27807a02ba41d52d0a54.png"
+    },
+    {
+      "productId": 1,
+      "id": 4,
+      "description": "et porro tempora",
+      "completed": true,
+      "image":"https://paynami2022.s3.us-east-2.amazonaws.com/qrcode_image/621f27807a02ba41d52d0a54.png"
+    },
+    {
+      "productId": 1,
+      "id": 5,
+      "description": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+      "completed": false,
+      "image":"https://paynami2022.s3.us-east-2.amazonaws.com/qrcode_image/621f27807a02ba41d52d0a54.png"
+    },
+    {
+      "productId": 1,
+      "id": 6,
+      "description": "qui ullam ratione quibusdam voluptatem quia omnis",
+      "completed": false,
+      "image":"https://paynami2022.s3.us-east-2.amazonaws.com/qrcode_image/621f27807a02ba41d52d0a54.png"
+    },
+    {
+      "productId": 1,
+      "id": 7,
+      "description": "illo expedita consequatur quia in",
+      "completed": false,
+      "image":"https://paynami2022.s3.us-east-2.amazonaws.com/qrcode_image/621f27807a02ba41d52d0a54.png"
+    },
+    {
+      "productId": 1,
+      "id": 8,
+      "description": "quo adipisci enim quam ut ab",
+      "completed": true,
+      "image":"https://paynami2022.s3.us-east-2.amazonaws.com/qrcode_image/621f27807a02ba41d52d0a54.png"
+    },
+    {
+      "productId": 1,
+      "id": 9,
+      "description": "molestiae perspiciatis ipsa",
+      "completed": false,
+      "image":"assets/images/team_06.jpg"
+    },
+    {
+      "productId": 1,
+      "id": 10,
+      "description": "illo est ratione doloremque quia maiores aut",
+      "completed": true,
+      "image":"./assets/images/about-heading.jpg"
+    }  ]
+}

@@ -427,7 +427,7 @@ header .navbar {
 }
 
 .product-item img {
-	width: 100%;
+	width: 50%;
 	overflow: hidden;
 }
 
@@ -706,7 +706,8 @@ footer .inner-content p a {
 
 .team-member .thumb-container .hover-effect .hover-content {
 	position: absolute;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
 	width: 100%;
 	text-align: center;
 	top: 50%;
