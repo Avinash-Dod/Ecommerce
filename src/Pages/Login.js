@@ -5,6 +5,7 @@ import './Login_signup.css'
 const st ={
   "max-width":"500px",
   "margin":"auto",
+  "height":"fit-content",
 }
 
 const Login = () => {

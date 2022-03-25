@@ -38,9 +38,19 @@
   opacity: 1;
 }
 .Head{
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .link-register
 {
   margin-top: 5px;
+  margin-bottom: 5px;
+}
+.login{
+  width: 50%;
+  height: auto;
+  margin: auto;
+  box-shadow: 0 0 0 5px #afa7a7;
+  border: solid 1px;
+
 }
