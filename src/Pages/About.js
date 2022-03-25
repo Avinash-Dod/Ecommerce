@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import BannerAbout from "../components/BannerAbout";
+import HoverContent from "../components/hoverContent";
 function About() {
     return (
         <>
@@ -48,14 +49,7 @@ function About() {
               <div class="thumb-container">
                 <img src="assets/images/team_01.jpg" alt="" />
                 <div class="hover-effect">
-                  <div class="hover-content">
-                    <ul class="social-icons">
-                      <li><a href="# "><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="# "><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="# "><i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="# "><i class="fa fa-behance"></i></a></li>
-                    </ul>
-                  </div>
+                  <HoverContent />
                 </div>
               </div>
               <div class="down-content">
