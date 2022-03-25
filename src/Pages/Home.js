@@ -26,7 +26,7 @@ function Home()
             <img src={exp.image} alt="" />
               <div className="down-content">
                 <a href="# "><h4>{exp.title}</h4></a>
-                <h6>{exp.price}</h6>
+                <h6>Rs. {exp.price} </h6>
                 <p>{exp.description}</p>
                 <ul className="stars">
                   <li><i className="fa fa-star"></i></li>
@@ -36,6 +36,8 @@ function Home()
                   <li><i className="fa fa-star"></i></li>
                 </ul>
                 <span>Reviews (24)</span>
+                <br></br>
+                <button type="submit" className="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart </button>
               </div>
             </div>
           </div>
