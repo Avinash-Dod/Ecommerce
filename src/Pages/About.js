@@ -1,21 +1,11 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import BannerAbout from "../components/BannerAbout";
 function About() {
     return (
         <>
             <Header />
-            <div class="page-heading about-heading header-text">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="text-content">
-                                <h4>about us</h4>
-                                <h2>our company</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <BannerAbout />
             <div class="best-features about-features">
                 <div class="container">
                     <div class="row">

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import './Login_signup.css'
@@ -7,19 +6,19 @@ const st ={
   "margin":"auto",
 }
 
-const Login = () => {
+const SignUp = () => {
 
   return (
-    <>
+    <div>
       <Header />
-      <h2>Login Page</h2>
+      <h2>SignUp Page</h2>
       <div className="find-us">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="login">
                 <div className="Head">
-              <h2>Login Form</h2>
+              <h2>Register Form</h2>
               </div>
                 <form style={st}>
                   
@@ -28,18 +27,17 @@ const Login = () => {
                     <input className="input-field" type="text" placeholder="Username" name="usrnm" />
                   </div>
 
-                  
+                  <div className="input-container">
+                    <i className="fa fa-envelope icon"></i>
+                    <input className="input-field" type="text" placeholder="Email" name="email" />
+                  </div>
 
                   <div className="input-container">
                     <i className="fa fa-key icon"></i>
                     <input className="input-field" type="password" placeholder="Password" name="psw" />
                   </div>
 
-                  <button type="submit" className="btn">Login </button>
-                 <div className="link-register">
-                  <span class="psw">Not a member? <a href=" #"><Link to="/signup">Register</Link></a></span>
-     <span class="psw"> Forgot <a href=" #">Password?</a></span>
-     </div>
+                  <button type="submit" className="btn">Register</button>
                 </form>
               </div>
             </div>
@@ -51,7 +49,7 @@ const Login = () => {
 
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
-export default Login;
+export default SignUp;
