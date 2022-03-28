@@ -4,6 +4,7 @@ import Cart from "../Pages/Cart";
 import Contact from "../Pages/Contact";
 import Home from "../Pages/Home";
 import Login from "../Pages/Login";
+import OurProducts from "../Pages/OurProducts";
 import SignUp from "../Pages/Signup";
 
 function Nav()
@@ -18,6 +19,7 @@ function Nav()
       <Route path="login" element={<Login />} />
       <Route path="signup" element={<SignUp/>} />
       <Route path="cart" element={<Cart/>} />
+      <Route path="ourproducts" element={<OurProducts/>} />
       </Routes>
       
 </div>

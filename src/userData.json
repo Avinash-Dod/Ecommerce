@@ -5,9 +5,9 @@
     {
       "productId": 1,
       "id": 1,
-      "title":"Tittle goes here",
+      "title":"Raisin’n’nuts",
       "price":2500,
-      "description": "delectus aut autem",
+      "description": "Groceries",
       
       "image":"https://paynami2022.s3.us-east-2.amazonaws.com/qrcode_image/621f27807a02ba41d52d0a54.png"
     },

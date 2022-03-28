@@ -1,5 +1,5 @@
 import SocialIcons from "./Socialicons";
-
+const date= new Date().getFullYear().toString()
 function Footer()
 {
     return (
@@ -10,7 +10,7 @@ function Footer()
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="img/logo.png" alt="" /></a>
+                            <a href="/" className="navbar-brand"><h2><i class="fa fa-shopping-cart" aria-hidden="true"></i> Imperial <em>Shopping</em></h2></a>
                         </div>
                         <ul>
                             <li>Address: 60-49 Road 11378 New York</li>
@@ -23,7 +23,7 @@ function Footer()
                     <div class="footer__widget">
                         <h6>Useful Links</h6>
                         <ul>
-                            <li><a href=" ">About Us</a></li>
+                            <li><a href="/about">About Us</a></li>
                             <li><a href=" ">About Our Shop</a></li>
                             <li><a href=" ">Secure Shopping</a></li>
                             <li><a href=" ">Delivery infomation</a></li>
@@ -34,7 +34,7 @@ function Footer()
                             <li><a href=" ">Who We Are</a></li>
                             <li><a href=" ">Our Services</a></li>
                             <li><a href=" ">Projects</a></li>
-                            <li><a href=" ">Contact</a></li>
+                            <li><a href="/contact">Contact</a></li>
                             <li><a href=" ">Innovation</a></li>
                             <li><a href=" ">Testimonials</a></li>
                         </ul>
@@ -42,22 +42,20 @@ function Footer()
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="footer__widget">
-                        <h6>Join Our Newsletter Now</h6>
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
-                        <form action=" ">
-                            <input type="text" placeholder="Enter your mail" />
-                            <button type="submit" class="site-btn">Subscribe</button>
-                        </form>
-                        
+                        <h6>Follow Us Here</h6>
+                        <p>Get updates about our latest shop and special offers.</p>
+                                  
                     </div>
                     <SocialIcons />
+                    
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class=" inner-content">
                         <div class="footer__copyright__text"><p>
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" >Colorlib</a>
+  Copyright &copy; {date} All rights reserved | <i class="fa fa-shopping-cart" aria-hidden="true"></i> IMPERIAL SHOPPING 
+  
   </p></div>
                         
                     </div>

@@ -36,7 +36,7 @@ const Login = () => {
                     <input className="input-field" type="password" placeholder="Password" name="psw" />
                   </div>
 
-                  <button type="submit" className="btn">Login </button>
+                  <button type="submit" className="btn primary-btn">Login </button>
                  <div className="link-register">
                   <span class="psw">Not a member? <a href=" #"><Link to="/signup">Register</Link></a></span>
      <span class="psw"> Forgot <a href=" #">Password?</a></span>
