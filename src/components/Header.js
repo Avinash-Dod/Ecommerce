@@ -14,7 +14,7 @@ function Header() {
       <header className="">
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <a className="navbar-brand" href="/ " style={marginTop}><h2>Sixteen <em>Clothing</em></h2></a>
+          <a className="navbar-brand" href="/ " style={marginTop}><h2>Imperial <em>Shopping</em></h2></a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>

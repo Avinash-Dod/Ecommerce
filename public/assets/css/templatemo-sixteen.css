@@ -49,8 +49,11 @@ ul.social-icons li a {
 	background-color: #eee;
 	color: #121212;
 	font-size: 18px;
-	text-align: center;
 	transition: all .3s;
+	border-radius: 50%;
+	text-align: center;
+	justify-content: center;
+	margin-right: 10px;
 }
 
 ul.social-icons li a:hover {
@@ -592,7 +595,9 @@ footer {
 footer .inner-content {
 	border-top: 1px solid #eee;
 	margin-top: 60px;
-	padding: 60px 0px;
+	
+	
+	
 }
 
 footer .inner-content p {
@@ -601,7 +606,8 @@ footer .inner-content p {
 
 footer .inner-content p a {
 	color: #f33f3f;
-	margin-left: 3px;
+	
+	
 }
 
 
