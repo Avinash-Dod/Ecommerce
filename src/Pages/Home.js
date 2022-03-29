@@ -17,6 +17,7 @@ function Home() {
             <div className="col-md-12">
               <div className="section-heading">
                 <h2>Latest Products</h2>
+                <div>&nbsp;&nbsp;&nbsp;</div>
                 <a href="/ourproducts">view all products <i className="fa fa-angle-right"></i></a>
               </div>
               <div className="section-title product__discount__title">

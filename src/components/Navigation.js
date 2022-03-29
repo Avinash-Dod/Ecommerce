@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router";
 import About from "../Pages/About";
 import Cart from "../Pages/Cart";
 import Contact from "../Pages/Contact";
+import Favourite from "../Pages/Favourite";
 import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import OurProducts from "../Pages/OurProducts";
@@ -20,6 +21,7 @@ function Nav()
       <Route path="signup" element={<SignUp/>} />
       <Route path="cart" element={<Cart/>} />
       <Route path="ourproducts" element={<OurProducts/>} />
+      <Route path="favourite" element={<Favourite/>} />
       </Routes>
       
 </div>
