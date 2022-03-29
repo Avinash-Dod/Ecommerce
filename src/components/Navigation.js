@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router";
 import About from "../Pages/About";
 import Cart from "../Pages/Cart";
 import Contact from "../Pages/Contact";
-import Favourite from "../Pages/Favourite";
+import Favourite from "../Pages/Favorite";
 import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import OurProducts from "../Pages/OurProducts";

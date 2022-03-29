@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import {  useState } from "react";
+import { useState } from "react";
 import './Login_signup.css'
 const st = {
   "max-width": "500px",
@@ -11,33 +11,33 @@ const st = {
 
 const Login = () => {
   const [username, setUsername] = useState('');
-const [password, setPassword] = useState('');
+  const [password, setPassword] = useState('');
 
-function userNameHandler(event) {
-  setUsername(event.target.value);
-}
-function passwordHandler(event) {
-  setPassword(event.target.value);
-}
-function onSubmitHandler(event) {
-  event.preventDefault();
-  const userData = {
-    userName: username,
-    password: password,
-
-  };
-
-  console.log(userData)
-  setUsername('');
-  setPassword('');
-
-  const Api=async()=>{
-    const result=await fetch('https://fakestoreapi.com/products/1')
-    console.log(result)
-    
+  function userNameHandler(event) {
+    setUsername(event.target.value);
   }
-  Api();
-};
+  function passwordHandler(event) {
+    setPassword(event.target.value);
+  }
+  function onSubmitHandler(event) {
+    event.preventDefault();
+    const userData = {
+      userName: username,
+      password: password,
+
+    };
+
+    console.log(userData)
+    setUsername('');
+    setPassword('');
+
+    const Api = async () => {
+      const result = await fetch('https://fakestoreapi.com/products/1')
+      console.log(result)
+
+    }
+    Api();
+  };
 
 
   return (

@@ -9,7 +9,7 @@ const Cart = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <span className=""><h2>Cart Items</h2></span>
+              <span className="heading"><h2>Cart Items</h2></span>
               <div className="shoping__cart__table">
                 <table>
                   <thead>

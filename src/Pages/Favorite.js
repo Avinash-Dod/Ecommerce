@@ -1,6 +1,6 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer";
-const Favourite = () => {
+const Favorite = () => {
 
   return (
     <>
@@ -9,7 +9,7 @@ const Favourite = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-            <span className=""><h2>Favourite Items</h2></span>
+            <span className=""><h2>Favorite Items</h2></span>
               <div className="shoping__cart__table">
                 <table>
                   <thead>
@@ -130,5 +130,5 @@ const Favourite = () => {
     </>
   )
 }
-export default Favourite
+export default Favorite
 
