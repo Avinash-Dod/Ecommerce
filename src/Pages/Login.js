@@ -12,6 +12,7 @@ const st = {
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  
 
   function userNameHandler(event) {
     setUsername(event.target.value);
@@ -19,17 +20,20 @@ const Login = () => {
   function passwordHandler(event) {
     setPassword(event.target.value);
   }
+ 
   function onSubmitHandler(event) {
     event.preventDefault();
     const userData = {
       userName: username,
       password: password,
+     
 
     };
 
     console.log(userData)
     setUsername('');
     setPassword('');
+   
 
     const Api = async () => {
       const result = await fetch('https://fakestoreapi.com/products/1')
@@ -58,13 +62,14 @@ const Login = () => {
                     <i className="fa fa-user icon"></i>
                     <input className="input-field" type="text" placeholder="Username" name="username" onChange={userNameHandler} value={username} />
                   </div>
-
+                 
 
 
                   <div className="input-container">
                     <i className="fa fa-key icon"></i>
                     <input className="input-field" type="password" placeholder="Password" name="psw" onChange={passwordHandler} value={password} />
                   </div>
+                  
 
                   <button type="submit" className="btn primary-btn">Login </button>
                   <div className="link-register">

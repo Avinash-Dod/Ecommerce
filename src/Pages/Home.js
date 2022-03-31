@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import BannerHome from "../components/BannerHome";
@@ -6,6 +7,7 @@ import ProductHover from "../components/productHover";
 
 const productData = productDetail.productData;
 function Home() {
+  const [count, setCount] = useState(0);
   return (
     <>
       <Header />
@@ -16,7 +18,7 @@ function Home() {
           <div className="row">
             <div className="col-md-12">
               <div className="section-heading">
-                <h2>Latest Products</h2>
+                <h2>Latest Products {count}</h2>
                 <div>&nbsp;&nbsp;&nbsp;</div>
                 <a href="/ourproducts">view all products <i className="fa fa-angle-right"></i></a>
               </div>
@@ -35,7 +37,8 @@ function Home() {
                           <div className="product__discount__item__pic ">
                             <a href="  "><img src={exp.image} alt="productnotfound" /></a>
                             <div className="product__discount__percent">-20%</div>
-                            <ProductHover />
+                            <ProductHover/>
+                            <button ></button>
                           </div>
                           <div className="product__discount__item__text">
                             <span>Dried Fruit</span>
