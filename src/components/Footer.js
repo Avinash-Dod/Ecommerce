@@ -3,13 +3,13 @@ const date = new Date().getFullYear().toString()
 function Footer() {
     return (
         <>
-            <footer class="footer spad">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="footer__about">
-                                <div class="footer__about__logo">
-                                    <a href="/" className="navbar-brand"><h2><i class="fa fa-shopping-cart" aria-hidden="true"></i> Imperial <em>Shopping</em></h2></a>
+            <footer className="footer spad">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-3 col-md-6 col-sm-6">
+                            <div className="footer__about">
+                                <div className="footer__about__logo">
+                                    <a href="/" className="heading"><h2><i className="fa fa-shopping-cart" aria-hidden="true"></i> Imperial <em>Shopping</em></h2></a>
                                 </div>
                                 <ul>
                                     <li>Address: 60-49 Road 11378 New York</li>
@@ -18,8 +18,8 @@ function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
-                            <div class="footer__widget">
+                        <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                            <div className="footer__widget">
                                 <h6>Useful Links</h6>
                                 <ul>
                                     <li><a href="/about">About Us</a></li>
@@ -39,8 +39,8 @@ function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12">
-                            <div class="footer__widget">
+                        <div className="col-lg-4 col-md-12">
+                            <div className="footer__widget">
                                 <h6>Follow Us Here</h6>
                                 <p>Get updates about our latest shop and special offers.</p>
 
@@ -49,11 +49,11 @@ function Footer() {
 
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class=" inner-content">
-                                <div class="footer__copyright__text"><p>
-                                    Copyright &copy; {date} All rights reserved | <i class="fa fa-shopping-cart" aria-hidden="true"></i> IMPERIAL SHOPPING
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <div className=" inner-content">
+                                <div className="footer__copyright__text"><p>
+                                    Copyright &copy; {date} All rights reserved | <i className="fa fa-shopping-cart" aria-hidden="true"></i> IMPERIAL SHOPPING
 
                                 </p></div>
 

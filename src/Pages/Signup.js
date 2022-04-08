@@ -1,57 +1,72 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import './Login_signup.css'
-const st ={
-  "max-width":"500px",
-  "margin":"auto",
-  "height":"fit-content",
+const st = {
+  "max-width": "500px",
+  "margin": "auto",
+  "height": "fit-content",
 }
 
 const SignUp = () => {
   
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [cPassword, setCpassword] = useState('');
-    const [mno, setMno] = useState('');
-  
-    function userNameHandler(event) {
-      setUsername(event.target.value);
-    }
-    function passwordHandler(event) {
-      setPassword(event.target.value);
-    }
-    function cPasswordHandler(event) {
-      setCpassword(event.target.value);
-    }
-    function mnoHandler(event) {
-      setMno(event.target.value);
-    }
-    function onSubmitHandler(event) {
-      event.preventDefault();
-      const userData = {
-        userName: username,
-        password: password,
-        cPassword:cPassword,
-        mno:mno,
-  
-  
-      };
-  
-      console.log(userData)
-      setUsername('');
-      setPassword('');
-      setCpassword('')
-      setMno('')
-  
-      const Api = async () => {
-        const result = await fetch('https://fakestoreapi.com/products/1')
-        console.log(result)
-  
-      }
-      Api();
-    }
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [cPassword, setCpassword] = useState('');
+  const [mno, setMno] = useState('');
+  const [email, setEmail] = useState('');
+
+  function onSubmitHandler(event) {
+    event.preventDefault();
+    const userData = {
+      username: username,
+      password: password,
+      confirmPassword: cPassword,
+      email: email,
+      phone: mno
+
+    };
+    // var axios = require('axios');
+    // var data = JSON.stringify(userData);
+
+    // var config = {
+    //   method: 'post',
+    //   url: 'http://localhost:5000/user/signup',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   data: data
+    // };
+
+    // axios(config)
+    //   .then(function (response) {
+        
+    //       alert("Registered successfully."); 
+          
+        
+        
+        
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+      
+    //       alert("login failed.")
+      
+        
+    //   });
+
+    console.log(userData)
+    setUsername('');
+    setPassword('');
+    setCpassword('')
+    setMno('')
+    setEmail('')
+
+    
+    
+  }
 
   return (
     <div>
@@ -63,34 +78,38 @@ const SignUp = () => {
             <div className="col-md-12">
               <div className="login">
                 <div className="Head">
-              <h2>Register Form</h2>
-              </div>
-              <form style={st} onSubmit={onSubmitHandler}>
+                  <h2>Register Form</h2>
+                </div>
+                <form style={st} onSubmit={onSubmitHandler}>
 
-<div className="input-container well">
-  <i className="fa fa-user icon"></i>
-  <input className="input-field" type="text" placeholder="Username" name="username" onChange={userNameHandler} value={username} />
-</div>
-<div className="input-container well">
-  <i className="fa fa-user icon"></i>
-  <input className="input-field" type="text" placeholder="Mobile Number" name="mno" onChange={mnoHandler} value={mno} />
-</div>
+                  <div className="input-container well">
+                    <i className="fa fa-user icon"></i>
+                    <input className="input-field" type="text" placeholder="Username" name="username" onChange={(e)=>setUsername(e.target.value)} value={username} required/>
+                  </div>
+                  <div className="input-container well">
+                    <i className="fa fa-user icon"></i>
+                    <input className="input-field" type="email" placeholder="email" name="email" onChange={(e)=>setEmail(e.target.value)} value={email}  required/>
+                  </div>
+                  <div className="input-container well">
+                    <i className="fa fa-user icon"></i>
+                    <input className="input-field" type="text" placeholder="Mobile Number" name="mno" onChange={(e)=>setMno(e.target.value)} value={mno} required/>
+                  </div>
 
 
-<div className="input-container">
-  <i className="fa fa-key icon"></i>
-  <input className="input-field" type="password" placeholder="Password" name="psw" onChange={passwordHandler} value={password} />
-</div>
-<div className="input-container">
-  <i className="fa fa-key icon"></i>
-  <input className="input-field" type="password" placeholder="Confirm Password" name="cpsw" onChange={cPasswordHandler} value={cPassword} />
-</div>
+                  <div className="input-container">
+                    <i className="fa fa-key icon"></i>
+                    <input className="input-field" type="password" placeholder="Password" name="psw" onChange={(e)=>setPassword(e.target.value)} value={password} required/>
+                  </div>
+                  <div className="input-container">
+                    <i className="fa fa-key icon"></i>
+                    <input className="input-field" type="password" placeholder="Confirm Password" name="cpsw" onChange={(e)=>setCpassword(e.target.value)} value={cPassword} required/>
+                  </div>
 
-<button type="submit" className="btn primary-btn">Register </button>
-<div className="link-register">
-  <span class="psw"></span>
-</div>
-</form>
+                  <button type="submit" className="btn primary-btn">Register </button>
+                  <div className="link-register">
+                    <span className="psw"></span>
+                  </div>
+                </form>
               </div>
             </div>
 

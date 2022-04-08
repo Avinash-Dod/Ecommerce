@@ -2,7 +2,7 @@ import SocialIcons from "./Socialicons"
 const HoverContent =()=>{
     return (
         <>
-<div class="hover-content">
+<div className="hover-content">
                    <SocialIcons />
                    </div>
                    </>
