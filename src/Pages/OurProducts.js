@@ -12,7 +12,7 @@ const OurProducts = () => {
 
   return (
     <>
-      <Header />
+      <Header/>
       <BannerHome />
 
       <div className="latest-products">
