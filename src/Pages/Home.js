@@ -34,19 +34,20 @@ function Home() {
 
                   <div className="row">
 
-                    {productData.map((exp) => (
-                      <div className="col-lg-3 " key={Math.random()}>
+                    
+                  {productData.map((exp) => (
+                      <div className="col-lg-3 " key={exp.id}>
                         <div className="product__discount__item">
                           <div className="product__discount__item__pic ">
                             <a href="  "><img src={exp.image} alt="productnotfound" /></a>
                             <div className="product__discount__percent">-20%</div>
-                            <ProductHover/>
-                            
+
+                            <ProductHover />
                           </div>
                           <div className="product__discount__item__text">
-                            <span>Dried Fruit</span>
-                            <h5><a href=" ">Raisin’n’nuts</a></h5>
-                            <div className="product__item__price">$30.00 <span>$36.00</span></div>
+                            <span>{exp.title}</span>
+                            <h5><a href=" ">{exp.description}</a></h5>
+                            <div className="product__item__price">{exp.price}<span>$36.00</span></div>
                           </div>
                         </div>
                       </div>

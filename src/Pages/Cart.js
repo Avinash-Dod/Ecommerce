@@ -28,7 +28,7 @@ const Cart = () => {
                   <tbody>
                     <tr>
                       <td className="shoping__cart__item">
-                        <img src="img/cart/cart-1.jpg" alt="" />
+                        <img src="https://th.bing.com/th/id/OIP.xROqL-hH7v_ujGWDQcoNTQHaFJ?w=249&h=180&c=7&r=0&o=5&dpr=1.18&pid=1.7" alt="" />
                         <h5>Vegetable’s Package</h5>
                       </td>
                       <td className="shoping__cart__price">
@@ -45,7 +45,7 @@ const Cart = () => {
                         $110.00
                       </td>
                       <td className="shoping__cart__item__close">
-                        <span className="fa fa-close"></span>
+                      <button type="button"><i className="fa fa-close" ></i></button>
                       </td>
                     </tr>
                     <tr>
@@ -67,7 +67,7 @@ const Cart = () => {
                         $39.99
                       </td>
                       <td className="shoping__cart__item__close">
-                        <span className="fa fa-close"></span>
+                        <button type="button"><i className="fa fa-close" ></i></button>
                       </td>
                     </tr>
                     <tr>
