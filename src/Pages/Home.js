@@ -44,11 +44,20 @@ function Home() {
 
                             <ProductHover />
                           </div>
+                          <div class="product__details__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <span>(18 reviews)</span>
+                        </div>
                           <div className="product__discount__item__text">
                             <span>{exp.title}</span>
                             <h5><a href=" ">{exp.description}</a></h5>
                             <div className="product__item__price">{exp.price}<span>$36.00</span></div>
                           </div>
+                          
                         </div>
                       </div>
                     ))}
