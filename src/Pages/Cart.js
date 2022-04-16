@@ -76,7 +76,7 @@ const Cart = () => {
                         <h5>Organic Bananas</h5>
                       </td>
                       <td className="shoping__cart__price">
-                        $69.00
+                        <i class='fa fa-rupee'></i>69.00
                       </td>
                       <td className="shoping__cart__quantity">
                         <div className="quantity">
